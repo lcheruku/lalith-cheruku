@@ -11,7 +11,7 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
   </a>
 
 <h1 align="center">Hi 👋, I'm Lalith</h1>
-<h3 align="center">Dynamic and Enthusiastic Software Developer</h3>
+<h2 align="center">Dynamic and Enthusiastic Software Developer</h3>
 
 📫 How to reach me - **clalithadithya@gmail.com**
 
