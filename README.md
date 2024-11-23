@@ -6,3 +6,6 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
   <a href="https://linkedin.com/in/lalith-adithya-reddy-cheruku-621b28315">
     <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge" alt="LinkedIn Badge"/>
   </a>
+<div id="badges" align="center">
+  <img src="https://komarev.com/ghpvc/?username=your-github-username&style=flat-square&color=blue" alt=""/>
+  </a>
