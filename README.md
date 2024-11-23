@@ -67,3 +67,8 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 <a href="https://kafka.apache.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/apache_kafka-icon.svg" alt="Kafka" height="50" /></a>  
 <a href="https://grafana.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/grafana.png" alt="Grafana" height="50" /></a>  
 </div>  
+
+![]()  
+
+
+</td></tr></table>  
