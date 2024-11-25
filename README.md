@@ -19,7 +19,7 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 
 ⚡ Fun fact - **My jokes are terrible 😂**
 
-## My Skill Set  
+## 🚀 My Skill Set  
 <table><tr><td valign="top" width="33%">
 
 
@@ -72,3 +72,35 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 
 
 </td></tr></table>  
+
+## 🌟 My Projects & Contributions
+
+### **1. Trading Platform Development @CharlesSchwab(Current)**
+
+📌 **Delivered High-Impact Features** 
+
+🎯 **Optimized Operational Performance** 
+
+🔧 **Greater Client Experience** 
+
+🔐 **Enhanced Security Protocols**
+
+🚀 **Improved Scalability**
+
+🛠️ **Ensured Seamless Cloud Integration**
+
+### **2. Digital Platform Modernization Initiative @Accenture**
+
+✔️ **Migrated Legacy Systems**
+
+📅 **Led Sprint Success**
+
+🤝 **Collaborated with Cross-Functional Teams**
+
+👨‍🏫 **Mentored Junior Developers**
+
+🔧 **Improved Application Monitoring**
+
+📂 **Increased Code Quality**
+
+
