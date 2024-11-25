@@ -73,40 +73,55 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 
 </td></tr></table>  
 
+
 ## 🌟 My Projects & Contributions
 
 ### **1. Trading Platform Development @CharlesSchwab(Current)**
 
-📌 **Delivered High-Impact Features** 
+📌 Delivered High-Impact Features 
 
-🎯 **Optimized Operational Performance** 
+🎯 Optimized Operational Performance 
 
-🔧 **Greater Client Experience** 
+🔧 Greater Client Experience 
 
-🔐 **Enhanced Security Protocols**
+🔐 Enhanced Security Protocols
 
-📊 **Integrated Real-Time Analytics**
+📊 Integrated Real-Time Analytics
 
-🚀 **Improved Scalability**
+🚀 Improved Scalability
 
-🛠️ **Ensured Seamless Cloud Integration**
+🛠️ Ensured Seamless Cloud Integration
 
-🌟 **Recognized for Innovation**
+🌟 Recognized for Innovation
+
 
 ### **2. Digital Platform Modernization Initiative @Accenture**
 
-✔️ **Migrated Legacy Systems**
+✔️ Migrated Legacy Systems
 
-🛠️ **Developed Scalable Architecture**
+🛠️ Developed Scalable Architecture
 
-📅 **Led Sprint Success**
+📅 Led Sprint Success
 
-🤝 **Collaborated with Cross-Functional Teams**
+🤝 Collaborated with Cross-Functional Teams
 
-📖 **Cross-Team Knowledge Sharing**
+📖 Cross-Team Knowledge Sharing
 
-👨‍🏫 **Mentored Junior Developers**
+👨‍🏫 Mentored Junior Developers
 
-🔧 **Improved Application Monitoring**
+🔧 Improved Application Monitoring
 
-📂 **Increased Code Quality**
+📂 Increased Code Quality
+
+
+##
+### **What's next🤔?**
+
+Continue to use my tech expertise in more innovative ways to do amazing things.
+
+Invent strategies to simplify problems and contribute with my ideas in a distributed work environment.
+
+Explore and Learn new skills to fasten the technological development beyond the years.
+
+Sky is the limit. Work on innovative projects focusing on taking the user experience high up the sky.
+
