@@ -19,7 +19,7 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 
 ⚡ Fun fact - **My jokes are terrible 😂**
 
-## Languages and Tools  
+## My Skill Set  
 <table><tr><td valign="top" width="33%">
 
 
