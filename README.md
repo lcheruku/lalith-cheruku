@@ -117,11 +117,14 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 ##
 ### **What's next🤔?**
 
-Continue to use my tech expertise in more innovative ways to do amazing things.
+Continue to use my tech expertise in more innovative ways to do amazing things,
 
-Invent strategies to simplify problems and contribute with my ideas in a distributed work environment.
+Invent strategies to simplify problems and contribute with my ideas in a distributed work environment,
 
-Explore and Learn new skills to fasten the technological development beyond the years.
+Explore and Learn new skills to fasten the technological development beyond the years, and
 
 Sky is the limit. Work on innovative projects focusing on taking the user experience high up the sky.
 
+## 
+**Thank you ✨ for visiting my profile! Happy Coding 🧑‍💻**
+ 
