@@ -85,22 +85,28 @@ src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZvMGVzOTB5OTFvMWd0N2ttbnYzaG
 
 🔐 **Enhanced Security Protocols**
 
+📊 **Integrated Real-Time Analytics**
+
 🚀 **Improved Scalability**
 
 🛠️ **Ensured Seamless Cloud Integration**
+
+🌟 **Recognized for Innovation**
 
 ### **2. Digital Platform Modernization Initiative @Accenture**
 
 ✔️ **Migrated Legacy Systems**
 
+🛠️ **Developed Scalable Architecture**
+
 📅 **Led Sprint Success**
 
 🤝 **Collaborated with Cross-Functional Teams**
+
+📖 **Cross-Team Knowledge Sharing**
 
 👨‍🏫 **Mentored Junior Developers**
 
 🔧 **Improved Application Monitoring**
 
 📂 **Increased Code Quality**
-
-
