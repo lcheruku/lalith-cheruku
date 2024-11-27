@@ -170,6 +170,7 @@ Here, *244c76dcca39* is the Container ID.
 
 ## How I felt😄?
 
-Throughout this process, I was able to clearly understand the challeng, realize my thought process, find edge cases and potential failures, created a robust REST web service using Java Spring Boot framework, and ended with deploying my code to the Docker container. I felt very enthusiastic throughout solving the problem as I was quickly able to figure out all the necessary details required to reach the desired outcome. Finally, I felt accomplished after finishing this time-consuming yet demanding challenge. I'm looking forward to solve more problems like these that would test my problem-solving abilities and inch closer to my future goals.
+Throughout this process, I was able to clearly understand the challeng, realize my thought process, find edge cases and potential failures, created a robust REST web service using Java Spring Boot framework, and ended with deploying my code to the Docker container. I felt very enthusiastic throughout solving the problem as I was quickly able to figure out all the necessary details required to reach the desired outcome. Finally, I felt accomplished after finishing this time-consuming yet demanding challenge. I'm looking forward to solving more problems like these that would test my problem-solving abilities and inch closer to my future goals.
 
-##
+## 
+I thank you🙏 for taking time in reviewing my work. Feel free to fork my repository. I would greatly appreciate any pull requests for changes that would make my code look better. Have a great time👋!
