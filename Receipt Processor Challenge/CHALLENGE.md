@@ -125,7 +125,45 @@ This is how I went about solving the problem. I've also calculated the points fo
 
 ## How I setup Docker image and built them with the Docker container?
 
-To setup docker, I followed a simple -step process. Go through the following steps one-by-one.
+To setup docker, I followed a simple 5-step process. Go through the following steps one-by-one.
 
-1. Firstly, I Opened GitBash terminal in my Eclipse IDE by right-clicking on my project name and clicking "Show Local Terminal" button.
-2. 
+1. Firstly, I Opened GitBash terminal in my Eclipse IDE by right-clicking on my project name -> Show Local Terminal -> GitBash. This opened a GitBash terminal pointing to current directory.
+   
+2. In GitBash, I typed the below command to create a **Dockerfile**.
+
+         $ touch Dockerfile 
+
+3. I clicked the Dockerfile open and pasted the following code. This code determines the intructions needed to build a Docker image.
+
+         FROM openjdk:21
+         WORKDIR /app
+         COPY ./target/demo-0.0.1-SNAPSHOT.jar /app
+         EXPOSE 8080
+         CMD ["java","-jar","demo-0.0.1-SNAPSHOT.jar"]
+
+4. I circled back to GitBash terminal and typed the below command. This command runs the Dockerfile instructions and creates a docker image.
+
+         $ docker build -t receipt-processor .
+
+   Here, *receipt-processor* is the image name I used. 
+
+5. Now, it's time to run our docker image in a docker container. For that, use the below command in GitBash.
+
+         $ docker run -p 8080:8080 --name receipt-processor
+
+   Here, *8080:8080* are the ports for both host and docker container respectively whereas *receipt-processor* is the image_id/image_tag. 
+
+With the above configuration, I was successfully able to build a docker image and run it in a docker container. I gave a finishing touch by executing the final command to check whether the docker container has been created and running successfully. That command is,
+
+         $ docker container ps
+
+This command successfully showed the docker image that is currently running my code in a docker container. 
+
+         CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS          PORTS                    NAMES
+         244c76dcca39   receipt-processor   "java -jar demo-0.0.…"   51 seconds ago   Up 51 seconds   0.0.0.0:8080->8080/tcp   exciting_brown
+
+Likewise, I created multiple replicas of my code in many docker images and pushed them to docker containers. I culminated this by executing the final command that would stop the docker image from running. This is because I want to avoid resource wastage. For that, I executed following command.
+
+         $ docker stop 244c76dcca39
+         
+Here, *244c76dcca39* is the Container ID.
