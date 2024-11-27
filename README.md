@@ -126,7 +126,7 @@ Explore and Learn new skills to fasten the technological development beyond the 
 Sky is the limit. Work on innovative projects focusing on taking the user experience high up the sky.
 
 ## 
-**Thank you✨ for visiting my profile! Feel free to check out my repository for solutions to most complex problems, I would be posting them more often.**
+*Thank you✨ for visiting my profile! Feel free to check out my repository for solutions to most complex problems, I would be posting them more often.*
                                                                                                                                                       
 *Happy Coding🧑‍💻! Bubye👋✌️!!*
  
