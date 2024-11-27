@@ -8,7 +8,7 @@ I'll end this conversation by configuring docker images followed by building and
 
 ## What was the challenge about?
 
-This challenge is about building a web service that fulfills the openAPI documentation provided in a yml file. You'll find the documentation in src/main/resources/api.yml. Before I worked on solving this problem, I gave a quick glance at my tech expertise and went about gathering up the important things I need in my armoury.
+This challenge is about building a web service that fulfills the OpenAPI documentation provided in a yml file. You'll find the documentation in src/main/resources/**api.yml**. Before I worked on solving this problem, I gave a quick glance at my tech expertise and went about gathering up the important things I need in my armoury.
 
 ## What do I need in the first place🤔?
 
@@ -17,7 +17,7 @@ There are several things I need to figure out from the plenty of options I have 
 ### 1. What web service do I need?
 
    The specifications for this challenge are,
-   * Payload: JSON payload(view src/main/resources/examples for example cases)
+   * Payload: JSON payload(view src/main/resources/*examples* for example cases)
    * Response: JSON object
 
    Based on these specifications, I thought **REST web service** is the best web service I can use to build the respective API endpoints.
@@ -34,9 +34,9 @@ There are many ways I could've gone. For example, use Spring Data JPA for genera
 
 Not needed
 
-### 5. Which REST client do I need to use?
+### 5. Which REST client and IDE do I need to use?
 
-There are many REST clients you'll come across in your Software Development journey. For this problem, there is no specific reason choose a particular REST client unless you wanna say you are familiar with it. I choose **POSTMAN** because I'm more familiar with its interface.
+There are many REST clients and IDEs you'll come across in your Software Development journey. For this problem, there is no specific reason choose a particular REST client unless you wanna say you are familiar with it. I choose **POSTMAN** and **Eclipse** because I'm more familiar with there interfaces.
 
 ## What are the different edge cases I came across?
 
@@ -48,4 +48,35 @@ I've this habit of analyzing different edge cases before even starting to solve 
 4. **Input validation** - Input values for Retailer names and description are generally a mix of characters including special characters like @, !, # etc. Inputs accept all characters including alphanumeric and non-alphanumeric.
 5. **Date and Time validation** - Errors like 13th month, 31st date, 25th hour of the day, 61st minute of the hour etc., are prone to happen as these entities do not exist.
 
-## 
+## What is my thought process? How I approached step-by-step👨?
+
+As I decided to build REST APIs using Spring Boot framework, I created different classes in my Eclipse IDE. I'll explain them one by one down below.
+
+1. SpringBootApplication class - I created **ReceiptProcessorChallengeApplication.java** class using *@SpringBootApplication* to start off my spring boot application. You'll find this class in src/main/java/SpringBootApplication folder.
+2. Model classes - I wanted to create two model classes to determine the format and key-value pairs of my JSON payload. One is **Receipt.java** and **Item.java**. View them at src/main/java/Model folder.
+3. Service classes - Now it's time for Service class. These are usually annotated with *@Service*. Take a look at them in src/main/java/Service folder.
+   1. I created **ServiceReceipt.java** for created two methods namely processReceipt() and getPoints(). These methods contain application logic with respect to the request and response specification mentioned in OpenAPI documentation. These methods are called by the RestController class as soon as our API endpoints are triggered.
+   2. The main purpose of **PointsAwarded.java** class is to calculate the points for receipts based on the set of rules mentioned in the challenge description.
+4. Controller class - I've configured all the above classes to this *@RestController* annotated **ReceiptController.java** class. API endpoints, http methods POST and GET, request body and path variable are clearly mentioned. Service class methods are called as soon as the API endpoint is called in POSTMAN and appropriate response get generated within 100-150ms. See code in src/main/java/Controller folder.
+
+But, this is not how I begun. I started off by building a compatible project using **Spring Initializr**. For that, I
+1. Opened a web browser(Chrome).
+2. Typed start.spring.io on the address bar and pressed enter.
+3. Selected project as **Maven**, language as **Java**.
+4. Selected most recent Spring Boot version(did not choose Snapshot versions because they are still under development).
+5. Gave project metadata as per my convenience.
+6. Chose **Jar** packaging.
+7. Added **Spring Boot Starter Web** and **Spring Boot DevTools** dependencies and clicked Generate.
+
+A jar file was downloaded in my local machine in a Zip folder. I extracted it into a folder and then,
+1. I opened Eclipse
+2. Clicked on File(Top-left corner)
+3. Clicked on Import
+4. Clicked on Existing Maven Projects, hit next.
+5. Selected the root directory where this jar file is residing and hit finish.
+
+I was successfully able to open a Maven project generated by the Spring Initializr and I'm ready to code. I quickly glanced at *pom.xml*(main folder) and *application.properties*(src/main/resources) to see I have all the necessary dependencies and configurations needed for this challenge. 
+
+I used the default *8080* port server. However, I still including the port number as 8080 in my application.properties files to ensure my application is running in that same port.
+
+After finishing my project, I run my project using **Maven Build** command. For that, I right-clicled on my project name in the project explorer, selected *Run As*, hit *Maven Build..*, typed **clean package** in the goals field and clicked **Run**. A jar file has been downloaded to my target directory in my local machine. I would deploy this jar file to a docker container and I'll explain how I did it very soon. For now, after I generated my jar file, I run my code and execute it in POSTMAN Rest Client. 
