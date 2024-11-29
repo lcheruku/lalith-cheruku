@@ -37,12 +37,23 @@ I would be covering wide range of Problem Categories namely,
 9. Trees & Graphs
 10. Mathematics
 
+### 📖 Example Problem Sources
+I would be solving problems that are most common in
+
+1. LeetCode and other coding platform practice exercises
+2. Interviews
+3. Undergrad and Grad Examinations
+4. Other online resources
+
 ### 🛠️ Tools and Technologies
+Following are the my selections for the coding challenges.
 
 * Programming Language - Java and Node.JS
 * IDE - Eclipse and Visual Studio Code
 * Operating System - Windows
 * Version Control - Git and GitHub
+
+These selections are mere choices I made from wide range of options that I have.
 
 ##
 
