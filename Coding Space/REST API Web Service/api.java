@@ -174,13 +174,13 @@ public List<Employee> getEmployeeDetails(){
 
 // http://localhost:8080/employees/id
 @GetMapping("/employees/{id}") // HTTP - GET method
-public Employee getEmployeeDetailsById(@PathVariable long id){
+public Employee getEmployeeDetailsById(@PathVariable long id){ // @PathVariable is the id that we pass in the URL header
 	return employeeService.getEmployeeById(id);
 }
 
 // http://localhost:8080/employees
 @PostMapping("/employees") // HTTP - POST method
-public Employee insertEmployeeDetails(@RequestBody Employee employee){
+public Employee insertEmployeeDetails(@RequestBody Employee employee){ // @RequestBody is the payload we pass for inserts and updates as Body
 	return employeeService.addEmployeeDetails(employee);
 }
 
