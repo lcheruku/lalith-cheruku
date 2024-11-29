@@ -9,7 +9,7 @@
     Spring Boot version - 3.4.0(current)
   */
 // Also, assume that maven dependencies are readily available in pom.xml file 
-// Additionally, configuration properties are already managed in application.properties
+// Additionally, properties for SQL Workbench and port 8080 are already configured in application.properties
 // Let's follow the given process pattern, Spring Boot Application Class -> Entity Class -> Repository Class -> Service Class -> Rest Controller
 
 ____________________________________________________________________________________________________________________________________________________
@@ -151,3 +151,55 @@ return repository.deleteById(id);
 
 }
   
+____________________________________________________________________________________________________________________________________________________
+
+// Rest Controller class - Building REST API web service
+@RestController // Creates APIs that communicate with Service class method implementations respectively
+@RequestMapping("/employees") // creating a base endpoint 
+// These API endpoints are called from the URL - http://localhost:8080/employees
+Public class Controller {
+
+private final EmployeeService employeeService; // Field-injection
+
+Public Controller(EmployeeService employeeService) // Constructor
+{
+	this.employeeService = employeeService;
+}
+
+// http://localhost:8080/employees
+@GetMapping("/employees") // HTTP - GET method
+public List<Employee> getEmployeeDetails(){
+	return employeeService.getAllEmployees();
+}
+
+// http://localhost:8080/employees/id
+@GetMapping("/employees/{id}") // HTTP - GET method
+public Employee getEmployeeDetailsById(@PathVariable long id){
+	return employeeService.getEmployeeById(id);
+}
+
+// http://localhost:8080/employees
+@PostMapping("/employees") // HTTP - POST method
+public Employee insertEmployeeDetails(@RequestBody Employee employee){
+	return employeeService.addEmployeeDetails(employee);
+}
+
+// http://localhost:8080/employees/id
+@PutMapping("/{id}") // HTTP - PUT method
+public Employee updatedEmployee(@PathVariable Long id, @RequestBody Employee employee) {
+	return employeeService.updatedEmployee(id, employee);
+}
+
+// http://localhost:8080/employees/id
+@PatchMapping("/{id}") // HTTP - PATCH method
+public Employee updateEmployee(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
+	return employeeService.updateEmployee(id, updates);
+    }
+
+// http://localhost:8080/employees/id
+@DeleteMapping("/{id}") // HTTP - DELETE method
+public Employee deleteEmployee(@PathVariable Long id){
+	return employeeService.deleteEmployee(id);
+}
+
+}
