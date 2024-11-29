@@ -60,6 +60,8 @@ ________________________________________________________________________________
 
 // Creating an interface that has methods which are called by our Service class to perform Crud Operations
 // I would generally include any operations I might perform in an interface and call them from Service class. I reckon as good coding practice  
+import java.util.List;
+	
 public interface IEmployeeService {
 
 // review on all these methods will be provided in our Service class
@@ -75,6 +77,8 @@ public void deleteEmployee(Long id);
 ____________________________________________________________________________________________________________________________________________________
 
 // Service class - Business logic
+import java.util.List;
+	
 @Service
 public class EmployeeService implements IEmployeeService { 
 
@@ -154,6 +158,8 @@ return repository.deleteById(id);
 ____________________________________________________________________________________________________________________________________________________
 
 // Rest Controller class - Building REST API web service
+import java.util.List;
+	
 @RestController // Creates APIs that communicate with Service class method implementations respectively
 @RequestMapping("/employees") // creating a base endpoint 
 // These API endpoints are called from the URL - http://localhost:8080/employees
