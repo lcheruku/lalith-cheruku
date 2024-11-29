@@ -1,4 +1,4 @@
-## Welcome to Coding Space🤝💼
+## Welcome to Coding Space🤝💼 - A Line Segment connecting two points, Problem and Solution
 
 Coding Space is a folder in my public repository that I would be using to solve most complex coding problems in our day-to-day life. I would provide optimal to near-optimal code while walk you through the *Problem Description*, *My Approach to Problem-Solving*, *Time and Space Complexities* etc. 
 
