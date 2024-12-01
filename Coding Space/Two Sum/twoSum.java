@@ -15,7 +15,7 @@ import java.util.Map;
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         // Creating a HashMap for caching
-        Map<Integer, Integer> twoSum = new HashMap<>();
+        Map<Integer, Integer> numMap = new HashMap<>();
         
         // Iterating through nums[]
         for (int i = 0; i < nums.length; i++) {
@@ -25,11 +25,11 @@ public class TwoSum {
             // Checking for complement in the map
             if (numMap.containsKey(complement)) {
                 // returning the indices if complement is found
-                return new int[] { twoSum.get(complement), i };
+                return new int[] { numMap.get(complement), i };
             }
             
             // storing the element and its index if complement is not found
-            twoSum.put(nums[i], i);
+            numMap.put(nums[i], i);
         }
         
         // Solution not found. I can also throw an IllegalArgumentException
