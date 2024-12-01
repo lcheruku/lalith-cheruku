@@ -30,6 +30,6 @@ public static boolean isPalindrome(String str) {
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
-/* dry run yourself:
+/* Dry run yourself
   str = "Racecar"  
 */
