@@ -29,6 +29,6 @@ public static String reverseString(String str) {
 
 ------------------------------------------------------
 
-/* dry run yourself:
+/* Dry run yourself
   str = "Hello World"  
 */
