@@ -26,3 +26,9 @@ public static String reverseString(String str) {
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
+
+------------------------------------------------------
+
+/* dry run yourself:
+  str = "Hello World"  
+*/
