@@ -53,5 +53,5 @@ public class LRU {
 
 /* Dry run yourself
     {1,2,3,4,1,2,5,1,2,3,4,5}, Frame size = 3
-    Clue: Total page faults are 9
+    Clue: Total page faults are 10
 */
