@@ -2,20 +2,20 @@
 /* Simple problem to explain how MRU works
 
   Consider {7,0,1,2,0,3,0,4,2,3,0,3,2,3} with frame size as 4
-  Adding 7 to the Set : Set ( , , , 7) : 1 Page Fault
-  Adding 0 to the Set : Set ( , , 0, 7) : 2 Page Faults
-  Adding 1 to the Set : Set ( , 1, 0, 7) : 3 Page Faults
-  Adding 2 to the Set : Set (2, 1, 0, 7) : 4 Page Faults
-  Adding 0 to the Set : Set (2, 1, 0, 7) : No Page Fault
-  Adding 3 to the Set : Set (2, 1, 3, 7) : 5 Page Faults
-  Adding 0 to the Set : Set (2, 1, 0, 7) : 6 Page Faults
-  Adding 4 to the Set : Set (2, 1, 4, 7) : 7 Page Faults
-  Adding 2 to the Set : Set (2, 1, 4, 7) : No Page Fault
-  Adding 3 to the Set : Set (3, 1, 4, 7) : 8 Page Faults
-  Adding 0 to the Set : Set (0, 1, 4, 7) : 9 Page Faults
-  Adding 3 to the Set : Set (3, 1, 4, 7) : 10 Page Faults
-  Adding 2 to the Set : Set (2, 1, 4, 7) : 11 Page Faults
-  Adding 3 to the Set : Set (3, 1, 4, 7) : 12 Page Faults
+  Adding 7 to the Stack : Stack ( , , , 7) : 1 Page Fault
+  Adding 0 to the Stack : Stack ( , , 0, 7) : 2 Page Faults
+  Adding 1 to the Stack : Stack ( , 1, 0, 7) : 3 Page Faults
+  Adding 2 to the Stack : Stack (2, 1, 0, 7) : 4 Page Faults
+  Adding 0 to the Stack : Stack (2, 1, 0, 7) : No Page Fault
+  Adding 3 to the Stack : Stack (2, 1, 3, 7) : 5 Page Faults
+  Adding 0 to the Stack : Stack (2, 1, 0, 7) : 6 Page Faults
+  Adding 4 to the Stack : Stack (2, 1, 4, 7) : 7 Page Faults
+  Adding 2 to the Stack : Stack (2, 1, 4, 7) : No Page Fault
+  Adding 3 to the Stack : Stack (3, 1, 4, 7) : 8 Page Faults
+  Adding 0 to the Stack : Stack (0, 1, 4, 7) : 9 Page Faults
+  Adding 3 to the Stack : Stack (3, 1, 4, 7) : 10 Page Faults
+  Adding 2 to the Stack : Stack (2, 1, 4, 7) : 11 Page Faults
+  Adding 3 to the Stack : Stack (3, 1, 4, 7) : 12 Page Faults
 
   Total page faults: 12
 */
