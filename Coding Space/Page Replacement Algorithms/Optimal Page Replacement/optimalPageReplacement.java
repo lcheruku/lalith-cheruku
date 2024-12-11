@@ -21,33 +21,54 @@
 */
 
 public class MRU {
-  public static int pageFaults(int[] page, int frameSize) {
-    // Stack to represent the frames in memory
-    Stack<Integer> stack = new Stack<>();
-    int pageFaults = 0; // Page faults initialized to 0 and incremented by 1 everytime a page fault occurs 
+  public static int optimalPageReplacement(int capacity, int[] page) {
+        List<Integer> list = new ArrayList<>(capacity);
+        int pageFaults = 0;
 
-      for (int page : page) {
-          // If the page is not in the stack
-          if (!stack.contains(page)) {
-             pageFaults++; // Increment page fault by 1
+        for (int i = 0; i < page.length; i++) {
+            int page = page[i];
 
-             // If the stack is full, remove the most recently used page
-             if (stack.size() == frameSize) {
-                stack.pop(page);
-              }
-          } else {
-              // If the page is already in the stack, remove it to be readded again as recently used page
-              stack.removeElement(page);
-          }
-        // Adding the page to the stack
-        stack.push(page);
-       }
-    
-      return pageFaults; // Returns number of page faults
+            boolean isPageInFrame = lost.contains(page);
+            if (!isPageInFrame) {
+                if (list.size() < capacity) {
+                    list.add(page);
+                } else {
+                    
+                    int farthestDistance = i;
+                    int farthestPage = -1;
+
+                    for (int frame : list) {
+                        int nextUsage = -1;
+                        for (int j = i + 1; j < page.length; j++) {
+                            if (page[j] == frame) {
+                                nextUsage = j;
+                                break;
+                            }
+                        }
+
+                        if (nextUsage == -1) {
+                            farthestPage = frame;
+                            break;
+                        }
+
+                        if (nextUsage > farthestDistance) {
+                            farthestDistance = nextUsage;
+                            farthestPage = frame;
+                        }
+                    }
+
+                    list.set(list.indexOf(farthestPage), page);
+                }
+                pageFaults++;
+            }
+
+        }
+
+        return pageFaults;
     }
 }
 
 /* Dry run yourself
     {1,2,3,4,1,2,5,1,2,3,4,5}, Frame size = 3
-    Clue: Total page faults are 7
+    Clue: Total page faults are 8
 */
